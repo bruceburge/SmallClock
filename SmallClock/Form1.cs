@@ -66,5 +66,15 @@ namespace SmallClock
         {
             lblTime.Text = DateTime.Now.ToString("hh:mm:ss");
         }
+
+        private void Form1_BackColorChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_SystemColorsChanged(object sender, EventArgs e)
+        {
+            lblTime.ForeColor = ContrastColor(this.BackColor);
+        }
     }
 }

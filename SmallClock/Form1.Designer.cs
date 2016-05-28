@@ -63,6 +63,8 @@
             this.Text = "SmallClock";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.BackColorChanged += new System.EventHandler(this.Form1_BackColorChanged);
+            this.SystemColorsChanged += new System.EventHandler(this.Form1_SystemColorsChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
